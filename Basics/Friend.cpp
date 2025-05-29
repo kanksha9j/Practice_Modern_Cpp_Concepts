@@ -1,0 +1,1 @@
+//freiend allows a function or class to access private members of class.
