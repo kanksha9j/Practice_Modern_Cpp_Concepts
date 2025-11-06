@@ -1,1 +1,21 @@
+RAII: Resource Acquisition is initialization. 
+It is a C++ programming technique that binds a lifecycle of resource (like memory,file handles, locks,socket) to the lifetime of an object.
+Means when object is constructed it aquires a resource and when object is destroyed the resource is released. This automatic cleanup of resource is done through destructors, which makes resource management safer and less error prone.
+
+Move semantics enable the transfer of resources and ownership of objects, inside and outside containers, and across threads
+while ensuring resource safety.
+
+std::move: transfers the ownership from one object to another. After this the original pointer no longer owns the object.
+
+unique ptr: 
+It is defined in header <memory>. It is a smart pointer that owns and manages object via a pointer and disposes the object when the unique_ptr goes out of scope. 
+When a unique_ptr goes out of scope, its destructor calls delete on the owned pointer automatically. 
+
+shared pointer:
+It is a smart pointer that retains shared ownership of an object through a pointer. Several shared pointers can own and manage the same object. It maintains a reference count that increments when a new shared pointer points to the same object. When the reference count is equal to 0 , the object is destroyed and memory is deallocated.
+
+weak ptr: 
+Weak ptr is a smart pointer that has a non-owning(weak ) reference to an object that is managed by shared pointer. It must be converted to sharerd pointer to access the referenced object. means in short it observes a shared ptr with weak reference. Weak pointer models temporary ownership.
+Weak pointer is used to break the reference cycles formed by objects managedby shared pointer. In such cases shared pointer count cannot reach 0 and memory is leaked. To prevent this one of the pointers in the cycle is made weak.
+
 
