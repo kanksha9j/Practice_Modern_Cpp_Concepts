@@ -1,0 +1,3 @@
+unique_ptr: create, reset , reset with new, reset with make_unique(preferred), move, pass ptr as argument and return parameter, get()
+shared_ptr: create multipe, reset, reference count, cyclic reference example.
+weak_ptr: create, solve cyclic reference, expired(), lock(), convert to shared pointer, check reference count.
