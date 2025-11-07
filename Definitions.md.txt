@@ -14,6 +14,13 @@ When a unique_ptr goes out of scope, its destructor calls delete on the owned po
 shared pointer:
 It is a smart pointer that retains shared ownership of an object through a pointer. Several shared pointers can own and manage the same object. It maintains a reference count that increments when a new shared pointer points to the same object. When the reference count is equal to 0 , the object is destroyed and memory is deallocated.
 
+Reference count:
+The number of shared_ptrs owning the object. The reference count belongs to the object being managed,
+not to any individual std::shared_ptr. 
+
+Circular reference:
+Reference cycling happens when two or more objects managed by shared pointer own each other meaning each hold shared pointer to other. So this prevents the objects from getting deleted as the reference count never reaches 0 and thus causes memory leak.
+
 weak ptr: 
 Weak ptr is a smart pointer that has a non-owning(weak ) reference to an object that is managed by shared pointer. It must be converted to sharerd pointer to access the referenced object. means in short it observes a shared ptr with weak reference. Weak pointer models temporary ownership.
 Weak pointer is used to break the reference cycles formed by objects managedby shared pointer. In such cases shared pointer count cannot reach 0 and memory is leaked. To prevent this one of the pointers in the cycle is made weak.
