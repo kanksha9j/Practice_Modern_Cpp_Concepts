@@ -25,4 +25,8 @@ weak ptr:
 Weak ptr is a smart pointer that has a non-owning(weak ) reference to an object that is managed by shared pointer. It must be converted to sharerd pointer to access the referenced object. means in short it observes a shared ptr with weak reference. Weak pointer models temporary ownership.
 Weak pointer is used to break the reference cycles formed by objects managedby shared pointer. In such cases shared pointer count cannot reach 0 and memory is leaked. To prevent this one of the pointers in the cycle is made weak.
 
+A lambda function in C++ is an anonymous function (a function without a name) that you can define directly in an expression.
+It is used to create short, inline callable objects.
+A lambda function in C++ is an anonymous function created using a lambda expression, which may capture variables from its surrounding scope and acts as a callable object.
+
 
