@@ -1,3 +1,4 @@
 unique_ptr: create, reset , reset with value, reset with make_unique(preferred), move, pass ptr as argument(value & reference) and return parameter, get()
 shared_ptr: create multip1e copies, reset original and check value and reference count, cyclic reference example.
-weak_ptr: create, solve cyclic reference, expired(), lock(), when does weak_ptr expire?, convert to shared pointer, create shared ptr copy and check reference count, now reset original and check.
+weak_ptr: create, solve cyclic reference, other use?, expired(), lock(), when does weak_ptr expire?, convert to shared pointer, create shared ptr copy and check reference count, now reset original and check.
+lambda expression: use
