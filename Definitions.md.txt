@@ -29,4 +29,16 @@ A lambda function in C++ is an anonymous function (a function without a name) th
 It is used to create short, inline callable objects.
 A lambda function in C++ is an anonymous function created using a lambda expression, which may capture variables from its surrounding scope and acts as a callable object.
 
+Move Semantics: Move semantics: copies the object from source to target using shallow copy and then deletes the dynamic resources of source object.
+copy constructor: if there are temporary values. assigns new memory , copies and then destroys temporary. it is costly. so use move.
+
+Rule of 3 is the old version (pre-C++11): If a class manually manages a resource (e.g., via new/delete or raw handles) and you need to define a custom destructor, copy constructor, or copy assignment operator, then you must define all three.
+Because: A raw pointer requires custom deep copy, Destructor must delete/free the resource, Copy assignment must avoid double-delete.
+
+Rule of 5 is the modern version (C++11 and later) : If you manually manage a resource and define any one of the special member functions (destructor, copy/move constructors, copy/move assignment), you should define all five to ensure correct and safe resource management. 
+
+Rule of Zero is the preferred design approach today : Modern C++ actually prefers that you don’t implement any of these manually.
+If you use RAII classes like: std::vector, std::string, std::unique_ptr, std::shared_ptr, Then the compiler-generated versions are safe and you follow:
+“Classes should not manually manage resources. Prefer RAII wrappers so you need zero special members.”
+
 
