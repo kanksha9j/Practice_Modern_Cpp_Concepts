@@ -9,7 +9,7 @@ C++17:
 🔹 Must-Know (interview critical): structured bindings, if/switch with initializer, if constexpr, std::optional, std::variant, std::visit, std::string_view,
 std::filesystem, parallel algorithms
 🔹 Should-Know: new attributes, template enhancements, inline variables, nested namespaces, UTF-8 literals
-🔹 Rare but good to know: fold expressions, over-aligned allocation, constexpr lambdas
+🔹 Rare but good to know: fold expressions, over-aligned allocation, constexpr lambdas, std::any
 
 🔹Memory: stack vs heap, dynamic allocation, RAII, smart pointers, move semantics (C++11), copy/move constructor rules, rule of 3/5/0
 🔹OOP: inheritance, virtual functions, vtables, polymorphism, abstract classes, override/final, functors & lambdas
@@ -25,4 +25,4 @@ using string_view to avoid copies, understanding lifetime issues
 🔹Linux Development: file I/O , signals, processes, sockets (if backend/IoT)
 🔹Unit Testing: GoogleTest basics
 
-std::any
+
