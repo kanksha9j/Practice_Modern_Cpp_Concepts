@@ -2,6 +2,10 @@ RAII: Resource Acquisition is initialization.
 It is a C++ programming technique that binds a lifecycle of resource (like memory,file handles, locks,socket) to the lifetime of an object.
 Means when object is constructed it aquires a resource and when object is destroyed the resource is released. This automatic cleanup of resource is done through destructors, which makes resource management safer and less error prone.
 
+A shallow copy copies the pointer, not the data it points to, which means two objects end up sharing the same resource. This can cause double-delete and undefined behavior.
+A deep copy allocates new memory and duplicates the underlying data, so each object owns its own resource safely.
+When a class manages resources manually, we must implement a deep copy using custom copy constructor and copy assignment, which leads to the Rule of 3. With move semantics in C++11, this extends to the Rule of 5.
+
 Move semantics enable the transfer of resources and ownership of objects, inside and outside containers, and across threads
 while ensuring resource safety.
 
@@ -40,5 +44,7 @@ Rule of 5 is the modern version (C++11 and later) : If you manually manage a res
 Rule of Zero is the preferred design approach today : Modern C++ actually prefers that you don’t implement any of these manually.
 If you use RAII classes like: std::vector, std::string, std::unique_ptr, std::shared_ptr, Then the compiler-generated versions are safe and you follow:
 “Classes should not manually manage resources. Prefer RAII wrappers so you need zero special members.”
+
+this pointer: In C++, 'this' pointer is an implicit pointer available inside all non-static member function, and it always points to the current object that called the function. This pointer is internally used by methods to access the other members.
 
 
