@@ -47,4 +47,8 @@ If you use RAII classes like: std::vector, std::string, std::unique_ptr, std::sh
 
 this pointer: In C++, 'this' pointer is an implicit pointer available inside all non-static member function, and it always points to the current object that called the function. This pointer is internally used by methods to access the other members.
 
+noexcept: When you write noexcept, it tells the compiler that the function will not throw an exception. When the compiler has this knowledge it will make certain optimizations. Many STL operations like vector, behave differently with noexcept move constructor and prefer them for safe re-allocation and without fallback to copying. If the function does throw an exception at runtime, then std::terminate is called and the application will stop immediately.
+
+Why use Move constructor? Allows transfer of resources from one object to another instead of copying them. It prevents expensive deep copies eg. large heap allocation,arrays or buffers, as copying requires duplicating of all these resources which is also slow. STL containers rely heavily on move and allows faster re-allocation of resources with move.
+
 
