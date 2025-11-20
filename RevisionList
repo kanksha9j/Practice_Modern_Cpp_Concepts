@@ -3,7 +3,11 @@
 🔹weak_ptr: create, solve cyclic reference, other use?, expired(), lock(), when does weak_ptr expire?, convert to shared pointer, create shared ptr copy and check reference count, now reset original and check.
 🔹move semantics: Rule of 3 , 5, 0 and which is best and why,
 🔹move constructor, move assignment , rule of 0 , 3 , 5. which is best?, noexcept.
-🔹Oops: class,enum class, this pointer, Data abstraction, encapsulation, Inheritance- diamond problem and how to solve, Polymorphism: operator overloading, function overload, virtual functions. Abstract class.
+🔹Oops: class,enum class, this pointer,
+  - Data abstraction - Abstract class with overloading and overriding functions.
+  - Encapsulation  
+  - Inheritance- diamond problem and how to solve. 
+  - Polymorphism: operator overloading, function overload, virtual functions. 
 
 🔹lambda expression: create empty lambda, take all values by value, all by ref, parameter by argument, return parameter, some value by value or ref or argument, use mutable. 
 print value of lambda. initialize function parameters, initialize parameters in capture. 
