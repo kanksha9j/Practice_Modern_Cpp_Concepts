@@ -1,3 +1,13 @@
+Class: It is a user defined data type that holds its own data members and functions that can be accesssed and used by creating an instance of the class.
+
+Enum class: Enum classes provide stronger type safety than traditional enums. In traditional enum, two enums cannot share same names, also no variable can have same name as that which is in some enum.
+
+This pointer: It is an implicit(hidden) pointer that is automatically created to point to all non-static member functions or variables. It points to the current object that calls the function. In class A, it has type A* and (A* const) for const functions. *this will return the current object. Used to resolve name conflicts.
+
+OOPs Concepts:
+Abstraction in C++: It is the process of hiding implementation details or features from the user. It focuses on what the object does rather than how it does. It is achieved by using abstract classes( classes that have atleast one pure virtual function).
+A pure virtual function in C++ is a virtual function that has no implementation in the base class and must be overridden by derived classes.
+
 RAII: Resource Acquisition is initialization. 
 It is a C++ programming technique that binds a lifecycle of resource (like memory,file handles, locks,socket) to the lifetime of an object.
 Means when object is constructed it aquires a resource and when object is destroyed the resource is released. This automatic cleanup of resource is done through destructors, which makes resource management safer and less error prone.
@@ -50,5 +60,7 @@ this pointer: In C++, 'this' pointer is an implicit pointer available inside all
 noexcept: When you write noexcept, it tells the compiler that the function will not throw an exception. When the compiler has this knowledge it will make certain optimizations. Many STL operations like vector, behave differently with noexcept move constructor and prefer them for safe re-allocation and without fallback to copying. If the function does throw an exception at runtime, then std::terminate is called and the application will stop immediately.
 
 Why use Move constructor? Allows transfer of resources from one object to another instead of copying them. It prevents expensive deep copies eg. large heap allocation,arrays or buffers, as copying requires duplicating of all these resources which is also slow. STL containers rely heavily on move and allows faster re-allocation of resources with move.
+
+
 
 
