@@ -5,7 +5,8 @@ Enum class: Enum classes provide stronger type safety than traditional enums. In
 This pointer: It is an implicit(hidden) pointer that is automatically created to point to all non-static member functions or variables. It points to the current object that calls the function. In class A, it has type A* and (A* const) for const functions. *this will return the current object. Used to resolve name conflicts.
 
 OOPs Concepts:
-Abstraction in C++: It is the process of hiding implementation details or features from the user. It focuses on what the object does rather than how it does. It is achieved by using abstract classes( classes that have atleast one pure virtual function).
+Abstraction in C++: It is the process of hiding implementation details or features from the user. It focuses on what the object does rather than how it does. It is achieved by using abstract classes.
+Abstract class: A classe that has atleast one pure virtual function. The class cannot be instantiated.
 A pure virtual function in C++ is a virtual function that has no implementation in the base class and must be overridden by derived classes.
 
 RAII: Resource Acquisition is initialization. 
