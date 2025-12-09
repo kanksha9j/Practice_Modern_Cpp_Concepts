@@ -63,6 +63,20 @@ noexcept: When you write noexcept, it tells the compiler that the function will 
 Why use Move constructor? Allows transfer of resources from one object to another instead of copying them. It prevents expensive deep copies eg. large heap allocation,arrays or buffers, as copying requires duplicating of all these resources which is also slow. STL containers rely heavily on move and allows faster re-allocation of resources with move.
 
 C++17:
+-
+
+std::variant :
+-
+It is a type safe union. It can hold exactly one value out of several possible types.
+eg: std::variant<int, float, std::string> v; // At any time v contains either an int/float/string.
+std::variant is in <variant>
+- Provides:
+std::get
+std::get_if
+std::holds_alternative
+index()
+std::visit
+- Throws std::bad_variant_access if you call std::get with the wrong type.
 
 string_view: string_view: std::string_view is a lightweight, non-owning reference to a string introduced in C++17.
 It provides a read-only view of a character sequence without copying or allocating memory.
