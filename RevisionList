@@ -13,7 +13,6 @@
 print value of lambda. initialize function parameters, initialize parameters in capture. 
 🔹Thread and Synchronization concepts
 
-
 C++17:
 🔹 Must-Know (interview critical): structured bindings, if/switch with initializer, if constexpr, std::optional, std::variant, std::visit, std::string_view,
 std::filesystem, parallel algorithms
@@ -33,5 +32,18 @@ using string_view to avoid copies, understanding lifetime issues
 🔹Practical C++ Work Skills (Very Important): Build Systems, CMake basics, Debugging, gdb, valgrind (you already use it)
 🔹Linux Development: file I/O , signals, processes, sockets (if backend/IoT)
 🔹Unit Testing: GoogleTest basics
+
+On the fly book:
+🔹Constants: nullptr, constexpr
+🔹Variables: If-switch, initializer list , structured bindings
+🔹Type inference: auto , decltype, tail type inference, decltype(auto)
+🔹Control flow: if constexpr, range based for loop
+🔹Templates: Extern templates, the ">", type alias templates, variadic templates, 
+  fold expression, non type parameter deduction
+🔹 Object oriented: Delegate constructor, Inheritance constructor, 
+    Explicit virtual function overwrite, override, final, Explicit delete default function, strongly types enumerations
+
+
+
 
 
