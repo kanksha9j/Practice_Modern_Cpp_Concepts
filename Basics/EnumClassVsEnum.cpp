@@ -18,7 +18,8 @@ enum Colour { Red, Green, Yellow };
 
 enum Auto { Rot, Grun, Gelb };
 
-int main()
+//int main()
+int EnumClassVsEnum()
 {
     Color color = Color::Red;
     int col = Colour::Green;
