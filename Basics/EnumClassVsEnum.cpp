@@ -31,8 +31,10 @@ int EnumClassVsEnum()
 
 	cout << Colour::Yellow << endl; //Valid usage of traditional enum, outputs 2
 
-	//cout << Color::Yellow << endl; //Errors, cannot output enum class value directly, should be operator overloaded to convert to int or other types
-
+	//cout << Color::Yellow << endl; // Error: enum class cannot be output directly.
+    // Use an explicit cast (e.g. static_cast<int>(Color::Yellow))
+    // or overload operator<< for std::ostream if custom output is desired.
+	
 	if (Colour::Yellow == Auto::Gelb) //Gives only warning, comparison between different enum types
     {
         cout << "Yellow" << endl;
