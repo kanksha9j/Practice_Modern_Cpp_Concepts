@@ -87,12 +87,26 @@ Internally, it simply stores:
 Because it does not own the data, it is very efficient for passing substrings or string parameters, but it becomes invalid if the underlying string it refers to is destroyed.
 if str1 is out of scope or deleted, and str2 is used , it is actually a dangling reference. Therefore, a std::string_view must not refer to data stored in a local variable that will be destroyed, such as a std::string inside a function returning the view.
 
+pointer: just holds an address, no size info
+Best practice: when using pointer for array, pass the size info also. func(array,size);
+References: can gice size info.
+Best practice: Use std::vector or std::array. 
+
+Uninitialized pointer: 
+When a pointer is not initialized, it doent point to anything, and when it is dereferneced that leads to undefined behaviour. Hence we must initialize it.
+Best practice: Always initilize pointer and check while using if(ptr!=nullptr). Not needed in smart pointers.
+
+Wild pointer:
+
+
 C++ on the fly book:
 1. nullptr: It represents a null pointer value. It is used to indicate that a pointer does not point to any object or function. Is of type std::nullptr_t and can be converted to any other pointer type. 
-NULL : is defined as macro for 0 or (void *)0 in C .
+NULL : is defined as macro for 0 or (void *)0 in C . It is not type safe.
 But C++ does not allow the implicit conversion of void* to other pointer types (e.g., int*). Therefore, defining NULL as (void*)0 would require explicit casting every time it is used, which is why C++ compilers prefer the plain integer 0.
 explicit casting:
 eg: void* ptr = static_cast<void*>(NULL);
+
+Usage of NULL causes problems of function overloading. eg: foo(NULL), foo(nullptr) when functions are void foo(int), void foo(int*)
 
 constexpr: constexpr is a keyword introduced in C++11 that indicates that the value of a variable or function can be evaluated at compile time.
 It can be applied to variables, functions, and constructors. constexpr is useful for optimization, as it enables the compiler to perform computations at compile time rather than at runtime.
