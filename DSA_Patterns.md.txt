@@ -1,0 +1,97 @@
+1. Prefix Sum: 
+   -
+   Sum of elements in subarray
+   (303, 525, 560)
+
+2. Two Pointers: Move towards or away from each other
+   -
+   - palindrome
+    (167,15,11)
+     
+3. Sliding window: subarray of size 'k' of int/string
+   -
+    (643, 3, 76)
+
+4. Fast and slow pointers: moving two pointers at different speeds.
+   -
+   - involves linked list and array , check if contains a cycle, 
+     (141,202,287)
+
+5. Linked list in place reversal:
+   -
+   - swap odes in place
+   - use 3 pointers prev, curr, next
+     (206,92,24)
+
+6. Monotonic Stack:
+   -
+   - uses stack to find next greater or next smaller element in array.
+   (496, 739, 84)
+
+7. Top 'k' elements:
+   -
+   - Find largest 'k' elements, smallest 'k' elements and top 'k' elements
+   - Use: min-heap for largest, max-heap for smallest
+   - (215, 347, 373)
+
+8. Overlapping intervals:
+   -
+   - merge overlapping intervals, 
+   - Use:
+
+9. Modified Binary search :
+   -
+   -  Searching nearly sorted array
+   -  searching in a rotated sorted array
+   -  searching in a list with unkown length
+   -  searching in an array with duplicates
+   -  finding the first or last occurrence of an element
+   -  finding square root of number
+   -  finding a peak element
+   -  (33,153,240)
+
+10.Binary tree traversal
+- 
+  - Pre-order, Inorder, Postorder, LevelOrder (queue DS).
+    (257,230,124,107)
+
+11. Depth first search:
+    -
+    - find a path between 2 nodes
+    - checking if a graph contains a cycle
+    - finding a topological order in a directed acyclic graph
+    - counting number of connected components in a graph
+
+12. breadth-first search :
+    -
+    - finding shortest path between 2 nodes
+    - printing all nodes of tree level by level
+    - finding all connected
+    - components in a graph
+    - finding the shortest transformation sequence from one word to other
+    - Use queue (102,994,127)
+
+13. Matrix traversal:
+    -
+    - finding the shortest path in grid
+    can be solved with dfs and bfs
+    (733,200,130)
+
+15. Backtracking:
+    -
+  - Exploring all potential solution paths and backtracking the paths that do not lead to a valid solution
+  - generate all possible permutations combinations of a given set of elements.
+  - solve puzzles like sudoku or n-queens problem
+  - find all possible paths from start to end in a graph or a maze,
+  - generate all valid parantheses of a given length.
+
+15. Dynamic Programming:
+    -
+   - Solving optimization problems by breaking them down into smaller sub-problems and storing their solutions to avoid repitive work.
+   - overlapping sub-problems
+   - optimal substructure: maximize or minimize a certain value, count number of ways.
+   - Common DP patterns: fibonacci numbers, 0/1 knacksack, LCS, LIS, subset sum, matrix chain multiplication
+    
+    
+
+        
