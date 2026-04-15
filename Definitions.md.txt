@@ -1,3 +1,20 @@
+Basics:
+pointer: just holds an address, no size info
+Best practice: when using pointer for array, pass the size info also. func(array,size);
+References: can gice size info.
+Best practice: Use std::vector or std::array. 
+
+Uninitialized pointer: 
+When a pointer is not initialized, it doent point to anything, and when it is dereferneced that leads to undefined behaviour. Hence we must initialize it.
+Best practice: Always initilize pointer and check while using if(ptr!=nullptr). Not needed in smart pointers.
+
+Wild pointer:
+
+References:
+1. Must always be initialized while defining.
+2. Once reference initialized cannot be changed to be an alias of other location.
+3. Constant references can point to a temporary value.
+
 Class: It is a user defined data type that holds its own data members and functions that can be accesssed and used by creating an instance of the class.
 
 Enum class: Enum classes provide stronger type safety than traditional enums. In traditional enum, two enums cannot share same names, also no variable can have same name as that which is in some enum.
@@ -86,18 +103,6 @@ Internally, it simply stores:
 
 Because it does not own the data, it is very efficient for passing substrings or string parameters, but it becomes invalid if the underlying string it refers to is destroyed.
 if str1 is out of scope or deleted, and str2 is used , it is actually a dangling reference. Therefore, a std::string_view must not refer to data stored in a local variable that will be destroyed, such as a std::string inside a function returning the view.
-
-pointer: just holds an address, no size info
-Best practice: when using pointer for array, pass the size info also. func(array,size);
-References: can gice size info.
-Best practice: Use std::vector or std::array. 
-
-Uninitialized pointer: 
-When a pointer is not initialized, it doent point to anything, and when it is dereferneced that leads to undefined behaviour. Hence we must initialize it.
-Best practice: Always initilize pointer and check while using if(ptr!=nullptr). Not needed in smart pointers.
-
-Wild pointer:
-
 
 C++ on the fly book:
 1. nullptr: It represents a null pointer value. It is used to indicate that a pointer does not point to any object or function. Is of type std::nullptr_t and can be converted to any other pointer type. 
