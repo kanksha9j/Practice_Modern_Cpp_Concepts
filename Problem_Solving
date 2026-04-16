@@ -1,2 +1,22 @@
 Edge cases:
 1. Single element : 0 or negative
+
+   What the problem asks                             Pattern to reach for
+1. Process digits of a number,Digit extraction       % 10 + / 10 loop
+2. Find pair that sums to X /Find Complement         Hash map
+3. Longest/shortest subarray                         Sliding window
+4. Search in sorted array                            Binary search
+5. Check brackets/order valid                        Stack
+6. Traverse tree/graph                               BFS queue or DFS recursion
+7. Count occurrences                                 Frequency map
+8. Reverse / detect cycle in list                    Two pointers (fast/slow)
+
+Day 1-2:  3 problems using hash map
+Day 3:    3 problems using sliding window  
+Day 4:    3 problems using stack + binary search
+Day 5:    Mix — identify pattern first, then solve
+
+Leetcode Solved problems: Pattern Card
+
+Problem Type  Pattern             Keyline
+Palindrome    process the digit   access every digit, create reverse number, compare.
