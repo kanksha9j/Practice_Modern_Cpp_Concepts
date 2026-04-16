@@ -16,7 +16,16 @@ Day 3:    3 problems using sliding window
 Day 4:    3 problems using stack + binary search
 Day 5:    Mix — identify pattern first, then solve
 
+
 Leetcode Solved problems: Pattern Card
 
-Problem Type  Pattern             Keyline
-Palindrome    process the digit   access every digit, create reverse number, compare.
+Problem Type  Pattern                      Keyline
+Palindrome    process the digit            access every digit, create reverse number, compare.
+Two Sum       Find pair that sums to x     
+
+Learnings:
+1. Two Sum:
+- we use unordered container for two sum because its good for lookup.
+- unordered containers dont use distance because they dont have meaningful indices.
+- unordered_multiset - even if duplicates are allowed here, you cant access indices of these duplicates.
+- So use unordered_map- doesnt take duplicates , but the keys are unique , so you know the proper index to access
