@@ -11,6 +11,19 @@ Edge cases:
 7. Count occurrences                                 Frequency map
 8. Reverse / detect cycle in list                    Two pointers (fast/slow)
 
+The decision rule — ask one question to select container
+"What do I need to store, and what do I need to look up?"
+
+Your answer tells you the container directly:
+Store value only, look up "does X exist?"     →  unordered_set
+Store value→index, look up "where is X?"      →  unordered_map
+Store value→count, look up "how many X?"      →  unordered_map
+Need sorted order                             →  map or set (ordered)
+Need sequence, access by position             →  vector
+Need fast front+back insert/delete            →  deque
+LIFO (last in first out)                      →  stack
+FIFO (first in first out)                     →  queue
+
 Day 1-2:  3 problems using hash map
 Day 3:    3 problems using sliding window  
 Day 4:    3 problems using stack + binary search
