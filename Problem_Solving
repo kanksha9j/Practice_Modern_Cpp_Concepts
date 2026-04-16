@@ -32,12 +32,15 @@ Day 5:    Mix — identify pattern first, then solve
 
 Leetcode Solved problems: Pattern Card
 
-Problem Type  Pattern                      Keyline
-Palindrome    process the digit            access every digit, create reverse number, compare.
-Two Sum       Find pair that sums to x    | WHY: need O(1) lookup of complement
-                                          | KEY LINE: complement = target - nums[i]
-                                          |           if seen.count(complement) → found
-                                          |           else seen[nums[i]] = i   
+Problem Type     Pattern                      Keyline
+Palindrome       process the digit            access every digit, create reverse number, compare.
+Two Sum          Find pair that sums to x    | WHY: need O(1) lookup of complement
+                                             | KEY LINE: complement = target - nums[i]
+                                             |           if seen.count(complement) → found
+                                             |           else seen[nums[i]] = i   
+Longest prefix   Prefix reduction            Take whole string as prefix , then reduce the prefix after comparing 
+string                                       with all strings accordingly. This is not sliding window as multiple strings are involved.
+
 
 Learnings:
 1. Two Sum:
