@@ -34,7 +34,10 @@ Leetcode Solved problems: Pattern Card
 
 Problem Type  Pattern                      Keyline
 Palindrome    process the digit            access every digit, create reverse number, compare.
-Two Sum       Find pair that sums to x     
+Two Sum       Find pair that sums to x    | WHY: need O(1) lookup of complement
+                                          | KEY LINE: complement = target - nums[i]
+                                          |           if seen.count(complement) → found
+                                          |           else seen[nums[i]] = i   
 
 Learnings:
 1. Two Sum:
@@ -44,3 +47,4 @@ Learnings:
 - So use unordered_map- doesnt take duplicates , but the keys are unique , so you know the proper index to access
 - reserve space for unordered map.
 - instead of insert pair(slower) use access specifier mp[nums[i]=i; 
+- insert value as key because map searches with key.
