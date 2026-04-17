@@ -8,7 +8,7 @@ Edge cases:
 4. Search in sorted array                            Binary search
 5. Check brackets/order valid                        Stack
 6. Traverse tree/graph                               BFS queue or DFS recursion
-7. Count occurrences                                 Frequency map
+7. Count occurrences                                 Frequency map, Hash map/set
 8. Reverse / detect cycle in list                    Two pointers (fast/slow)
 
 The decision rule — ask one question to select container
@@ -42,6 +42,26 @@ Two Sum          Find pair that sums to x    | WHY: need O(1) lookup of compleme
 Longest prefix   Prefix reduction            Take whole string as prefix , then reduce the prefix after comparing 
 string                                       with all strings accordingly. This is not sliding window as multiple strings are involved.
 
+3 LONGEST COMMON PREFIX
+Pattern  : Prefix reduction
+Why      : Start with full first string, shrink until it fits all
+Key line : while str.find(prefix) != 0 → prefix = prefix.substr(0, size-1)
+Edge     : Empty array → ""
+
+#4 MOVE ZEROES
+Pattern  : Two pointers (slow/fast)
+Why      : slow = where next non-zero goes, fast = scanner
+Key line : if nums[fast] != 0 → swap(slow,fast) → slow++
+           fast++ always (for loop)
+
+5. Count unique occurrences : 
+Pattern: Frequency map, hash map/set  
+Why    : 1. Hash Map used to count frequency 
+         2. hash set to check uniqueness of frequency.
+KeyLine: mp[i]++; for every value in array.
+         if st.count(freq) → return false
+            else st.insert(freq)
+        
 
 Learnings:
 1. Two Sum:
