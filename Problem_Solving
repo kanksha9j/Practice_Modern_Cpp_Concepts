@@ -16,6 +16,7 @@ The decision rule — ask one question to select container
 
 Your answer tells you the container directly:
 Store value only, look up "does X exist?"     →  unordered_set
+check uniqueness of frequencies               =  unoredered_set
 Store value→index, look up "where is X?"      →  unordered_map
 Store value→count, look up "how many X?"      →  unordered_map
 Need sorted order                             →  map or set (ordered)
