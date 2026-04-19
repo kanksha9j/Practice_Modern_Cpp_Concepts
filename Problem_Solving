@@ -84,10 +84,10 @@ st.insert(x)      →  add element
 st.count(x)       →  1 if exists, 0 if not
 st.erase(x)       →  remove element
 
-Bit tricks (very useful)
-x & 1        // check odd/even
-x << 1       // multiply by 2
-x >> 1       // divide by 2
+Bit tricks (very useful) 
+x & 1        // check odd/even , output 1 for odd, 0 for even. applies to negative nos. also safe. 
+x << 1       // multiply by 2 if number is unsigned (non-negative) , shift bit left by 1
+x >> 1       // divide by 2 if number is unsigned (non-negative) , shift bit right by 1
 
 Two pointers:
 int i = 0, j = n - 1;
