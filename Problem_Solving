@@ -45,6 +45,10 @@ s.find(x)         →  index of x, or string::npos
 s.push_back(c)    →  add char to end
 reverse(s.begin(), s.end())  →  reverse string
 s.empty()         →  true if length 0
+stoi(s)           → string → int
+stol(s)           → string → long
+stoll(s)          → string → long long
+to_string(x)      → int → string 
 
 ARRAY / VECTOR OPERATIONS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -53,6 +57,7 @@ v.push_back(x)    →  add to end
 v.pop_back()      →  remove from end
 sort(v.begin(), v.end())          →  ascending
 sort(v.begin(), v.end(), greater<int>())  →  descending
+sort(v.rbegin(), v.rend()) // descending
 *max_element(v.begin(), v.end())  →  max value
 *min_element(v.begin(), v.end())  →  min value
 accumulate(v.begin(), v.end(), 0) →  sum of all
@@ -78,6 +83,27 @@ SET
 st.insert(x)      →  add element
 st.count(x)       →  1 if exists, 0 if not
 st.erase(x)       →  remove element
+
+Bit tricks (very useful)
+x & 1        // check odd/even
+x << 1       // multiply by 2
+x >> 1       // divide by 2
+
+Two pointers:
+int i = 0, j = n - 1;
+while (i < j) { ... }
+
+Sliding window:
+for (int r = 0; r < n; r++) {
+    // expand
+    while (condition) {
+        // shrink
+    }
+}
+
+Frequency counting:
+unordered_map<char, int> freq;
+for (char c : s) freq[c]++;
 
 ***********************************************************************************************************************
 
