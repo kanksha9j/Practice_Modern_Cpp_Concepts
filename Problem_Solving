@@ -25,11 +25,60 @@ Need fast front+back insert/delete            →  deque
 LIFO (last in first out)                      →  stack
 FIFO (first in first out)                     →  queue
 
-Day 1-2:  3 problems using hash map
-Day 3:    3 problems using sliding window  
-Day 4:    3 problems using stack + binary search
-Day 5:    Mix — identify pattern first, then solve
+****************************************************************************************************************
+Keywords to remember:
+CHAR OPERATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+tolower(c)        →  'A' becomes 'a'
+toupper(c)        →  'a' becomes 'A'
+isalpha(c)        →  true if letter
+isdigit(c)        →  true if 0-9
+isalnum(c)        →  true if letter or digit
+isspace(c)        →  true if space/tab/newline
 
+STRING OPERATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+s.size()          →  length
+s[i]              →  character at i
+s.substr(i, len)  →  substring from i, length len
+s.find(x)         →  index of x, or string::npos
+s.push_back(c)    →  add char to end
+reverse(s.begin(), s.end())  →  reverse string
+s.empty()         →  true if length 0
+
+ARRAY / VECTOR OPERATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+v.size()          →  length
+v.push_back(x)    →  add to end
+v.pop_back()      →  remove from end
+sort(v.begin(), v.end())          →  ascending
+sort(v.begin(), v.end(), greater<int>())  →  descending
+*max_element(v.begin(), v.end())  →  max value
+*min_element(v.begin(), v.end())  →  min value
+accumulate(v.begin(), v.end(), 0) →  sum of all
+
+MATH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+max(a, b)         →  larger of two
+min(a, b)         →  smaller of two
+abs(x)            →  absolute value
+sqrt(x)           →  square root
+pow(x, n)         →  x to power n
+
+MAP / SET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+mp[key]++         →  increment count
+mp.count(key)     →  1 if exists, 0 if not
+mp.find(key)      →  iterator, check != mp.end()
+for(auto& [k,v] : mp)  →  loop through map
+
+SET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+st.insert(x)      →  add element
+st.count(x)       →  1 if exists, 0 if not
+st.erase(x)       →  remove element
+
+***********************************************************************************************************************
 
 Leetcode Solved problems: Pattern Card
 
