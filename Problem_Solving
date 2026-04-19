@@ -61,6 +61,13 @@ Why    : 1. Hash Map used to count frequency
 KeyLine: mp[i]++; for every value in array.
          if st.count(freq) → return false
             else st.insert(freq)
+
+6. Palindrome string with other characters:  
+check :  isalnum() to check for alphanumeric characters.
+tolower(s[i]) to convert to lowercase.
+
+
+
         
 
 Learnings:
