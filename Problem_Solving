@@ -56,6 +56,7 @@ sort(v.begin(), v.end(), greater<int>())  →  descending
 *max_element(v.begin(), v.end())  →  max value
 *min_element(v.begin(), v.end())  →  min value
 accumulate(v.begin(), v.end(), 0) →  sum of all
+vector<int> v(st.begin(),st.end()) -> convert from set/string to vector
 
 MATH
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
