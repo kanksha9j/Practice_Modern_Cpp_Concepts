@@ -142,6 +142,10 @@ KeyLine: mp[i]++; for every value in array.
 check :  isalnum() to check for alphanumeric characters.
 tolower(s[i]) to convert to lowercase.
 
+7. Index of first occurrence of word in string 
+Pattern: two pointers
+Why: one pointer in one string, one pointer in other string and compare character by character. 
+Keyline: Avoid substring as it creates copies. while (j < m && haystack[i + j] == needle[j]) {j++;}
 
 
         
