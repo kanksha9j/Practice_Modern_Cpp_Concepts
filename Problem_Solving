@@ -54,6 +54,7 @@ ARRAY / VECTOR OPERATIONS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 v.size()          →  length
 v.push_back(x)    →  add to end
+v.erase(it)       -> it is iterator position of element to delete.
 v.pop_back()      →  remove from end
 sort(v.begin(), v.end())          →  ascending
 sort(v.begin(), v.end(), greater<int>())  →  descending
