@@ -11,9 +11,18 @@ Edge cases:
 7. Count occurrences                                 Frequency map, Hash map/set
 8. Reverse / detect cycle in list                    Two pointers (fast/slow)
 
+*******************************************************************************************************************
+Need to search something fast  →  map
+Need to check duplicates       →  set
+Need to process each digit     →  % 10 loop
+Need subarray                  →  sliding window
+Need sorted pair               →  two pointers
+*******************************************************************************************************************
+
 The decision rule — ask one question to select container
 "What do I need to store, and what do I need to look up?"
 
+----DONT MEMORIZE ANSWERS:::::-------------------
 Your answer tells you the container directly:
 Store value only, look up "does X exist?"     →  unordered_set
 check uniqueness of frequencies               =  unoredered_set
