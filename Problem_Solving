@@ -35,6 +35,20 @@ LIFO (last in first out)                      →  stack
 FIFO (first in first out)                     →  queue
 
 ****************************************************************************************************************
+STOP USING ITERATORS::::::::::::;
+ITERATOR                          INDEX
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+auto i = v.begin()            →   int i = 0
+auto i = v.end()-1            →   int i = v.size()-1
+*i                            →   v[i]
+i++                           →   i++
+i--                           →   i--
+i != v.end()                  →   i < v.size()
+distance(v.begin(), i)        →   just use i directly
+swap(*i, *j)                  →   swap(v[i], v[j])
+auto itr = find(v.begin(),    →   just loop manually
+     v.end(), val)                with index
+***************************************************************************************************************
 Keywords to remember:
 CHAR OPERATIONS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
