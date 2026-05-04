@@ -179,6 +179,11 @@ Keyline: nums[k] = nums[i]; k++;
 
 Learnings:
 Important: forget find , use visited.count(value)
+*************************************IMPORTANT************************************************
+"I need to find/search for something"
+          →  ALWAYS think map first
+          →  then ask: what am I storing?
+***********************************************************************************************
 1. Two Sum:
 - we use unordered container for two sum because its good for lookup.
 - unordered containers dont use distance because they dont have meaningful indices.
