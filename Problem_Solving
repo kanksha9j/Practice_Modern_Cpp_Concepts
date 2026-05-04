@@ -3,7 +3,7 @@ Edge cases:
 
    What the problem asks                             Pattern to reach for
 1. Process digits of a number,Digit extraction       % 10 + / 10 loop
-2. Find pair that sums to X /Find Complement         Hash map
+2. Find pair that sums to X /Find Complement         Hash map (two sum)
 3. Longest/shortest subarray                         Sliding window
 4. Search in sorted array                            Binary search
 5. Check brackets/order valid                        Stack
@@ -133,7 +133,7 @@ Leetcode Solved problems: Pattern Card
 
 Problem Type     Pattern                      Keyline
 Palindrome       process the digit            access every digit, create reverse number, compare.
-Two Sum          Find pair that sums to x    | WHY: need O(1) lookup of complement
+Two Sum          Find pair that sums to x    | WHY: need O(1) lookup of difference value(9-7)
                                              | KEY LINE: complement = target - nums[i]
                                              |           if seen.count(complement) → found
                                              |           else seen[nums[i]] = i   
@@ -178,6 +178,7 @@ Keyline: nums[k] = nums[i]; k++;
         
 
 Learnings:
+Important: forget find , use visited.count(value)
 1. Two Sum:
 - we use unordered container for two sum because its good for lookup.
 - unordered containers dont use distance because they dont have meaningful indices.
