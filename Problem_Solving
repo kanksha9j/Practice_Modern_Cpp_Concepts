@@ -97,7 +97,7 @@ pow(x, n)         →  x to power n
 
 MAP / SET
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-mp[key]++         →  increment count
+mp[key]++         →  increment count  -- works even if key does not exist, can be used for insert.
 mp.count(key)     →  1 if exists, 0 if not
 mp.find(key)      →  iterator, check != mp.end()
 for(auto& [k,v] : mp)  →  loop through map
