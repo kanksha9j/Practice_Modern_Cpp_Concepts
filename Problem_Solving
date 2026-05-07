@@ -1,6 +1,13 @@
 Edge cases:
 1. Single element : 0 or negative
-
+---------------------------------------------------------------------------------------------------------------
+1. Read problem statement
+2. Read constraints        ←  hints at pattern
+3. Run your 5 edge case questions
+4. Name the pattern
+5. Trace on paper
+6. Code
+----------------------------------------------------------------------------------------------------------------
    What the problem asks                             Pattern to reach for
 1. Process digits of a number,Digit extraction       % 10 + / 10 loop
 2. Find pair that sums to X /Find Complement         Hash map (two sum)
