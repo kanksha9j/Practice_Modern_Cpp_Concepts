@@ -151,6 +151,8 @@ while(ss >> word) {
 }
 
 ***********************************************************************************************************************
+Input possibilities to consider before solving anything: 
+
 1. What if input is EMPTY?
    s="" or t=""
 
