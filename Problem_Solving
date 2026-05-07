@@ -168,6 +168,13 @@ Input possibilities to consider before solving anything:
 5. What if input has NEGATIVE or SPECIAL values?
    uppercase letters, spaces, numbers
 **************************************************************************************************
+n <= 1000      →  O(n²) brute force is fine
+n <= 10^6      →  need O(n) or O(n log n)
+                  brute force will TLE
+
+string length <= 10^5  →  need hash map not nested loops
+values can be negative →  edge case to handle
+--------------------------------------------------------------------------------------------------
 
 Leetcode Solved problems: Pattern Card
 
