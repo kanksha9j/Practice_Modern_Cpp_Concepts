@@ -151,6 +151,21 @@ while(ss >> word) {
 }
 
 ***********************************************************************************************************************
+1. What if input is EMPTY?
+   s="" or t=""
+
+2. What if input has DUPLICATES?
+   s="aab" t="baa"  ← this is what broke your anagram
+
+3. What if input has DIFFERENT SIZES?
+   s="ab" t="abc"
+
+4. What if ALL elements are SAME?
+   s="aaaa" t="aaaa"
+
+5. What if input has NEGATIVE or SPECIAL values?
+   uppercase letters, spaces, numbers
+**************************************************************************************************
 
 Leetcode Solved problems: Pattern Card
 
