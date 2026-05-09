@@ -244,5 +244,14 @@ Important: forget find , use visited.count(value)
 - unordered_multiset - even if duplicates are allowed here, you cant access indices of these duplicates.
 - So use unordered_map- doesnt take duplicates , but the keys are unique , so you know the proper index to access
 - reserve space for unordered map.
+
+2. Binary Search:
+- remember: 
+- mid = left+ (right-left)/2  //as (left+right) /2 may overflow
+- if array[mid]< target : left= mid + 1 //move left pointer to second half
+- if array[mid] > target : right = mid - 1 //move right pointer to first half
+
+
+
 - instead of insert pair(slower) use access specifier mp[nums[i]=i; 
 - insert value as key because map searches with key.
