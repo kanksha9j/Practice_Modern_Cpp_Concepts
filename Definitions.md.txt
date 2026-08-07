@@ -120,6 +120,7 @@ It can be applied to variables, functions, and constructors. constexpr is useful
 a Yocto recipe directs how to build, package, and integrate that software into a complete Linux image.
 
 
+Yes, Yocto layers contain recipes, configuration files, and other metadata that tell the build system how to create a custom Linux image
 
 
 
