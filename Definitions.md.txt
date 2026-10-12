@@ -1,4 +1,15 @@
 Basics:
+literal: 
+integer literals: 
+1. decimal literal: int dec =10; //base 10
+2. octal literal: int oct = 052; //base 8
+3. hexadecimal literal: int hex = 0x2A ; //base 16
+4. binary literal: int bin= 0b101010; //base 2
+5. long integer: long int lint=42l;
+6. unsigned int ui=42U;
+7. floating point literal : float f=3.14;
+
+
 pointer: just holds an address, no size info
 Best practice: when using pointer for array, pass the size info also. func(array,size);
 References: can gice size info.
