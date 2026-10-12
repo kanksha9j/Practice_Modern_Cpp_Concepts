@@ -110,7 +110,6 @@ NULL : is defined as macro for 0 or (void *)0 in C . It is not type safe.
 But C++ does not allow the implicit conversion of void* to other pointer types (e.g., int*). Therefore, defining NULL as (void*)0 would require explicit casting every time it is used, which is why C++ compilers prefer the plain integer 0.
 explicit casting:
 eg: void* ptr = static_cast<void*>(NULL);
-
 Usage of NULL causes problems of function overloading. eg: foo(NULL), foo(nullptr) when functions are void foo(int), void foo(int*)
 
 Null pointer is a special reserved value of a pointer. A pointer of any type has such a reserved value. Formally, each specific pointer type (int *, char * etc.) has its own dedicated null-pointer value. Conceptually, when a pointer has that null value it is not pointing anywhere.
