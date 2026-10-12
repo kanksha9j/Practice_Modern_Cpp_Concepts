@@ -126,7 +126,8 @@ Usage of NULL causes problems of function overloading. eg: foo(NULL), foo(nullpt
 
 Null pointer is a special reserved value of a pointer. A pointer of any type has such a reserved value. Formally, each specific pointer type (int *, char * etc.) has its own dedicated null-pointer value. Conceptually, when a pointer has that null value it is not pointing anywhere.
 Void pointer is a specific pointer type - void * - a pointer that points to some data location in storage, which doesn't have any specific type.
-So, once again, null pointer is a value, while void pointer is a type
+So, once again, null pointer is a value, while void pointer is a type.
+To convert from an int* to a void*, no explicit cast is required in C++. This is because any object pointer implicitly converts to a void* automatically. for void* to int* use static_cast.
 
 constexpr: constexpr is a keyword introduced in C++11 that indicates that the value of a variable or function can be evaluated at compile time.
 It can be applied to variables, functions, and constructors. constexpr is useful for optimization, as it enables the compiler to perform computations at compile time rather than at runtime.
